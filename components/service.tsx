@@ -59,19 +59,20 @@ tl.fromTo(
             </div>
            <div
   className="relative w-full md:w-1/2"
+
 >
   <div
     ref={imgRef}
     className="w-full min-h-[400px] md:min-h-[450px] lg:min-h-[800px] bg-no-repeat bg-center bg-cover"
     style={{ backgroundImage: `url(${service.photo})` }}
   />
-  <div className="absolute inset-0 bg-black/50" />
+  <div className="absolute inset-0 bg-black/50 " />
 </div>
         </header>
-        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 p-4 gap-5">
             {!service.images && <></>} 
         {service.images !== null && service.images.length > 0 && service.images.map((s: string, i: number) => (
-            <Image src={s} key={i} alt={service.name + "Truhlářství Jantar"} width={200} height={500}/>
+            <Image src={s} key={i} alt={service.name + "Truhlářství Jantar"} width={300} height={500}/>
         ))}
         </section>
         </main>
