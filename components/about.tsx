@@ -25,7 +25,7 @@ export default function About({about}: {about: string[]}){
   }} plugins={[plugin.current]} id="onas" setApi={setApi} className="w-full flex lg:flex-row gap-4 flex-col-reverse">
             <CarouselContent className="lg:w-1/2 w-full">
                 {about.length >0 && about.map((p: string, i: number) => (
-                    <CarouselItem key={i} className="md:basis-1/2 lg:basis-full">
+                    <CarouselItem key={i} className="md:basis-1/2 lg:basis-full flex flex-col justify-center">
                         <Image src={p} alt="Truhlářství Jantar" width={350} height={800}/>
                     </CarouselItem>
                 ))}

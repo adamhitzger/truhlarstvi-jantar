@@ -47,7 +47,7 @@ export default function CompanyInfo(){
     );
   }, [])
     return(
-        <section className="w-full flex flex-col md:flex-row gap-4 p-4 lg:p-8">
+        <section className="w-full flex flex-col md:flex-row gap-4 p-8">
             <div ref={containerRef} className="w-full md:w-1/2 flex flex-col space-y-4">
                <h2 className="font-light text-5xl sm:text-6xl">Kontakt</h2>
                 <p className="text-gray-600 sm:max-w-2/3">

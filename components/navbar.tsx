@@ -20,7 +20,7 @@ export default function Navbar(){
                 />
                 </Link>
             </div>  
-            <div className="hidden w-1/2 md:flex flex-row justify-end md:justify-center space-x-2 text-xl py-3 text-white font-medium">
+            <div className="hidden w-1/2 md:flex flex-row justify-end md:justify-center space-x-2 text-lg py-3 text-white font-medium">
         {navLinks.map((n: NavLinks,i:number) => (
             <Link className="text-nowrap" key={i} href={n.link}>
                 {n.name + " / "}

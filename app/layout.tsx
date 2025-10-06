@@ -5,6 +5,10 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { Toaster } from "react-hot-toast";
 import WhatsAppButton from "@/components/whatsapp";
+import { VisualEditing } from "next-sanity";
+import { DisableDraftMode } from "@/components/DisableDraftMode";
+import { draftMode } from "next/headers";
+import { SanityLive } from "@/sanity/lib/live";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -40,7 +44,7 @@ openGraph: {
 }
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -48,13 +52,18 @@ export default function RootLayout({
   return (
     <html lang="cs">
       <body
-        className={`${inter.variable} antialiased flex flex-col min-h-screen gap-8`}
+        className={`${inter.variable} antialiased flex flex-col min-h-screen gap-8 overflow-x-hidden`}
       >
         <Navbar/>
         {children}
         <WhatsAppButton/>
         <Footer/>
         <Toaster/>
+        {/*
+        <SanityLive/>
+         {(await draftMode()).isEnabled && 
+        <VisualEditing/>
+       }*/}
       </body>
     </html>
   );

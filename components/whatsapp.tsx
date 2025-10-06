@@ -8,7 +8,12 @@ export default function WhatsAppButton(){
     const link = useRef<HTMLAnchorElement>(null)
     useEffect(() => {
          if (!link.current) return;
-        gsap.fromTo(link.current, {
+
+        const tl = gsap.timeline({
+          repeat: -1,
+          repeatDelay: 3
+        });
+        tl.fromTo(link.current, {
     y: -100,  
    opacity: 0
   }, {
@@ -16,10 +21,20 @@ export default function WhatsAppButton(){
     opacity: 1,
      duration: 1,       // délka animace
     ease: "bounce.out", // typ „odrazové“ animace
-    yoyo: true,
-    repeat: -1,
-    repeatDelay: 2
-  });
+  })
+  .to(link.current, {
+    x: -180,
+    y:5,
+    rotation: -90,
+    duration: 1.3,
+    ease: "power1.inOut"
+  }, "+=5")
+  .to(link.current, {
+    y: 100,        // můžeš dát i větší, podle toho jak má „zahučet“
+    opacity: 0,
+    duration: 0.8,
+    ease: "power1.in"
+  }, "-=0.5");
     },[])
     return(
          <Link ref={link} href={"tel:+420602544103"} id="whatsapp"

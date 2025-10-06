@@ -52,12 +52,12 @@ tl.fromTo(
                     Zaměřujeme se na výrobu nábytku na zakázku. Vyrábíme kuchyně na zakázku i běžný kuchyňský nábytek, vestavěné skříně i zakázkovou výrobu nábytku pro domácnosti i firmy.
                 </p>
                 <div ref={linkRef} className="flex flex-row gap-4">
-                    <Link href="/">
+                    <Link href="/#onas">
                         <Button>
                             O nás <ArrowRight/>
                         </Button>
                     </Link>
-                    <Link href="/">
+                    <Link href="tel:+420602544103">
                         <Button variant={"secondary"}>
                             Kontaktujte nás
                         </Button>

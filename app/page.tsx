@@ -1,16 +1,15 @@
 import Header from "@/components/header";
 import Services from "@/components/services";
 import About from "@/components/about";
-import { sanityFetch } from "@/sanity/lib/client";
+import { sanityFetch } from "@/sanity/lib/live";
 import { HOME_QUERY, SERVICES } from "@/sanity/lib/queries";
-import { HomePage, Service } from "@/types";
 import ServiceCarousel from "@/components/servicesCarousel";
 import CompanyInfo from "@/components/companyInfo";
 import Employees from "@/components/employees";
 
 export default async function Home() {
-  const homePage = await sanityFetch<HomePage>({query: HOME_QUERY})
-  const services = await sanityFetch<Service[]>({query: SERVICES});
+  const {data: homePage} = await sanityFetch({query: HOME_QUERY})
+  const {data: services} = await sanityFetch({query: SERVICES});
   return (
     <>
       <Header images={homePage.header}/>

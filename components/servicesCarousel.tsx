@@ -63,7 +63,7 @@ export default function ServiceCarousel({services}: {services: Service[]}){
   }} plugins={[plugin.current]} setApi={setApi} className="w-full flex lg:flex-row-reverse gap-4 flex-col-reverse">
             <CarouselContent className="lg:w-1/2 w-full">
                 {services.length >0 && services.map((p: Service, i: number) => (
-                    <CarouselItem key={i} className="md:basis-1/2 lg:basis-full">
+                    <CarouselItem key={i} className="md:basis-1/2 lg:basis-full flex flex-col justify-center">
                         <Image src={p.photo} alt="Truhlářství Jantar" width={350} height={800}/>
                     </CarouselItem>
                 ))}

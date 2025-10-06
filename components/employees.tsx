@@ -20,8 +20,8 @@ export default function Employees({workers}: {workers: Worker[]}){
     return(
         <>
         {workers && workers.length > 0 &&
-        <section className="w-full flex flex-col space-y-4 p-8">
-              <h1 className="font-medium text-black text-5xl sm:text-6xl text-center">Sháníme posilu</h1>
+        <section className="w-full flex flex-col space-y-4 py-8">
+              <h1 className="font-medium text-black text-5xl sm:text-6xl text-center">Sháníme posily do týmu</h1>
             <Carousel 
                 className="w-full rounded-xl"
                 plugins={[plugin.current]}
@@ -30,7 +30,7 @@ export default function Employees({workers}: {workers: Worker[]}){
                 <CarouselContent className="rounded-xl space-x-4">
                     {workers.map((s: Worker, i: number) => (
                        <CarouselItem
-  className="md:basis-1/2 text-center  relative p-5 flex space-y-3 flex-col rounded-xl bg-foreground/20"
+  className="sm:basis-1/2 md:basis-1/3  text-center relative p-5 flex space-y-3 flex-col rounded-xl bg-foreground/20"
   key={i}
 >
    
