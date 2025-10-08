@@ -19,7 +19,7 @@ export default function Footer(){
                     
                 </Link>
                 <p className="text-center text-base py-4"> 
-                      Zaměřujeme se výhradně na výrobu nábytku: zdravotní, lékárenský, kancelářský, restaurační, recepční pulty, ložnice, dětské pokoje, kuchyňské linky, pokoje, obývací stěny, šatny a další interiérové prvky. 
+                     Zaměřujeme se na výrobu nábytku na zakázku. Vyrábíme kuchyně na zakázku i běžný kuchyňský nábytek, vestavěné skříně i zakázkovou výrobu nábytku pro domácnosti i firmy.
                     </p>
             </div>
             <div className="w-full flex flex-col space-y-4 items-center justify-center">
@@ -37,24 +37,40 @@ export default function Footer(){
                     </Link>
 
                     <Link className="text-nowrap font-light" href={"/kancelare-a-pracovny"}>
-                        Kanceláře a pracovny
+                        Kanceláře a interiéry obchodů
                     </Link>
                     <Link className="text-nowrap font-light" href={"/bytovy-nabytek"}>
                         Bytový nábytek
                     </Link>
                     <Link className="text-nowrap font-light" href={"/kancelare-a-pracovny"}>
-                        Věstavené skríňě na míru
+                        Věstavené skríně na míru
                     </Link>
             </div>
 
             <div className="w-full flex flex-col space-y-4 items-center justify-center">
-               <h3 className="text-2xl font-medium">Kontaktní údaje</h3>
+               <h3 className="text-2xl font-medium">Provozovna</h3>
                     <span className="text-nowrap font-light" >
                         Mírovka 45, Havlíčkův Brod 580 01
                     </span>
 
+                    <Link className="text-nowrap font-light" href={"tel:+420602544103"}>
+                        +420 602 544 103
+                    </Link>
+                    <Link className="text-nowrap font-light" href={"mailto:josef.mysicka@centrum.cz"}>
+                        josef.mysicka@centrum.cz
+                    </Link>
+            </div>
+            <div className="w-full flex flex-col space-y-4 items-center justify-center">
+               <h3 className="text-2xl font-medium">Fakturační údaje</h3>
+                    <span className="text-nowrap font-light" >
+                        Bělohradská 1424, Havlíčkův Brod 580 01
+                    </span>
+
                     <span className="text-nowrap font-light" >
                         IČO: 46482890
+                    </span>
+                    <span className="text-nowrap font-light" >
+                        IČO: CZ7012032973
                     </span>
                     <Link className="text-nowrap font-light" href={"tel:+420602544103"}>
                         +420 602 544 103

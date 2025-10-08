@@ -47,7 +47,7 @@ tl.fromTo(
         <header className="w-full flex flex-col md:flex-row">
             <div className="h-20 md:hidden"/>
             <div className="w-full space-y-3 md:w-1/2 mt-20 lg:mt-0 flex flex-col justify-center items-center p-12">
-                <h1 ref={headingRef} className="font-medium text-black text-5xl sm:text-6xl">Zakázkové <span className="underline underline-offset-4 decoration-3 decoration-foreground">truhlářství</span> v Havlíčkově Brodě</h1>
+                <h1 ref={headingRef} className="font-medium text-black text-5xl sm:text-6xl text-center">Zakázkové <span className="underline underline-offset-4 decoration-3 decoration-foreground">truhlářství</span> s 30. letou tradicí - Josef Myšička</h1>
                 <p ref={textRef} className="text-gray-600">
                     Zaměřujeme se na výrobu nábytku na zakázku. Vyrábíme kuchyně na zakázku i běžný kuchyňský nábytek, vestavěné skříně i zakázkovou výrobu nábytku pro domácnosti i firmy.
                 </p>

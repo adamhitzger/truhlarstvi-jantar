@@ -72,7 +72,9 @@ tl.fromTo(
         <section className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 p-4 gap-5">
             {!service.images && <></>} 
         {service.images !== null && service.images.length > 0 && service.images.map((s: string, i: number) => (
-            <Image src={s} key={i} alt={service.name + "Truhlářství Jantar"} width={300} height={500}/>
+           <div key={i} className="flex flex-col justify-center w-full">
+                       <Image src={s} alt={service.name + "Truhlářství Jantar"} width={300} height={500}/>
+          </div>
         ))}
         </section>
         </main>

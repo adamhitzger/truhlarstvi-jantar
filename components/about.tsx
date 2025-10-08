@@ -22,14 +22,17 @@ export default function About({about}: {about: string[]}){
     return(
         <Carousel  opts={{
     loop: true,
-  }} plugins={[plugin.current]} id="onas" setApi={setApi} className="w-full flex lg:flex-row gap-4 flex-col-reverse">
-            <CarouselContent className="lg:w-1/2 w-full">
+  }} plugins={[plugin.current]} id="onas" setApi={setApi} className="w-full flex lg:flex-row gap-4 justify-center flex-col-reverse">
+           <div  className="lg:w-1/2 w-full  flex flex-col justify-center">
+            <CarouselContent className="max-w-5xl my-auto">
                 {about.length >0 && about.map((p: string, i: number) => (
-                    <CarouselItem key={i} className="md:basis-1/2 lg:basis-full flex flex-col justify-center">
+                    <CarouselItem key={i} className="md:basis-1/2 lg:basis-full ">
                         <Image src={p} alt="Truhlářství Jantar" width={350} height={800}/>
                     </CarouselItem>
                 ))}
+               
             </CarouselContent>
+             </div>
              <div className="flex flex-col lg:w-1/2 w-full text-right items-end justify-center space-y-5 px-4 lg:p-8">
                 <h2 className="text-5xl md:text-7xl tracking-wide font-light">Kdo jsme ?</h2>
                 <p>
