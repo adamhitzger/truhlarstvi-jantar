@@ -7,7 +7,7 @@ import Link from "next/link"
 export default function Footer(){
     return(
         <>
-        <footer className="text-white grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-4 bg-[#434141] gap-4 px-4 pb-4">
+        <footer className="text-white grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 bg-[#434141] gap-4 px-4 ">
             <div className="w-full flex flex-col items-center">
                 <Link href={"/"} passHref className="bg-foreground h-fit pb-2 rounded-bl-2xl rounded-br-2xl">
                     <Image
@@ -43,7 +43,7 @@ export default function Footer(){
                         Bytový nábytek
                     </Link>
                     <Link className="text-nowrap font-light" href={"/kancelare-a-pracovny"}>
-                        Věstavené skríně na míru
+                        Věstavené skríě na míru
                     </Link>
             </div>
 
@@ -60,7 +60,7 @@ export default function Footer(){
                         josef.mysicka@centrum.cz
                     </Link>
             </div>
-            <div className="w-full flex flex-col space-y-4 items-center justify-center">
+            <div className="w-full flex flex-col space-y-4 items-center justify-center sm:col-span-2 mx-auto lg:col-span-1">
                <h3 className="text-2xl font-medium">Fakturační údaje</h3>
                     <span className="text-nowrap font-light" >
                         Bělohradská 1424, Havlíčkův Brod 580 01
@@ -79,13 +79,13 @@ export default function Footer(){
                         josef.mysicka@centrum.cz
                     </Link>
             </div>
-            <div className="w-full flex flex-row sm:col-span-2 md:col-span-4">
+      
+        </footer>
+             <div className="w-full flex flex-row">
  <Link href={"adamhitzger.com"} className="bg-[#434141] text-white text-center font-medium w-full text-xl p-2">
                 Developed by Adam Hitzger
             </Link>
             </div>
-        </footer>
-       
             </>
     )
 }

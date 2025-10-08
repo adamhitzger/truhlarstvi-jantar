@@ -5,10 +5,6 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { Toaster } from "react-hot-toast";
 import WhatsAppButton from "@/components/whatsapp";
-import { VisualEditing } from "next-sanity";
-import { DisableDraftMode } from "@/components/DisableDraftMode";
-import { draftMode } from "next/headers";
-import { SanityLive } from "@/sanity/lib/live";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -52,7 +48,7 @@ export default async function RootLayout({
   return (
     <html lang="cs">
       <body
-        className={`${inter.variable} antialiased flex flex-col min-h-screen gap-8 overflow-x-hidden`}
+        className={`${inter.variable} antialiased flex flex-col min-h-screen  overflow-x-hidden`}
       >
         <Navbar/>
         {children}
