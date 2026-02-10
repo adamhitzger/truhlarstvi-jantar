@@ -60,7 +60,7 @@ export default function ServiceCarousel({services}: {services: Service[]}){
     return(
         <Carousel  opts={{
     loop: true,
-  }} plugins={[plugin.current]} setApi={setApi} className="w-full flex lg:flex-row-reverse gap-4 flex-col-reverse">
+  }} plugins={[plugin.current]} setApi={setApi} className="w-full py-2 flex lg:flex-row-reverse gap-4 flex-col-reverse">
             <CarouselContent className="lg:w-1/2 w-full">
                 {services.length >0 && services.map((p: Service, i: number) => (
                     <CarouselItem key={i} className="md:basis-1/2 lg:basis-full flex flex-col justify-center">

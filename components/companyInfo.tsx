@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useEffect, useRef } from "react"
@@ -47,6 +48,7 @@ export default function CompanyInfo(){
     );
   }, [])
     return(
+      <>
         <section className="w-full flex flex-col md:flex-row gap-4 p-8">
             <div ref={containerRef} className="w-full md:w-1/2 flex flex-col space-y-4">
                <h2 className="font-light text-5xl sm:text-6xl">Kontakt</h2>
@@ -76,5 +78,9 @@ export default function CompanyInfo(){
             </div>
             <iframe ref={imageRef} className="w-full md:w-1/2 min-h-96 md:min-h-[400px] m-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.623026913539!2d15.61139177662624!3d49.58599947144011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470d00c03b49c263%3A0x9ed8056d556a6da7!2zVFJVSEzDgcWYU1RWw40gSm9zZWYgTXnFoWnEjWth!5e0!3m2!1scs!2scz!4v1757006146143!5m2!1scs!2scz" width="600" height="450" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </section>
+        <section className="w-full p-8 flex flex-row justify-center">
+      <Image width={512} height={512} src={"/dotace.jpg"} alt="Dotace pro truhlářství Jantar"/>
+        </section>
+        </>
     )
 }
